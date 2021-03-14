@@ -41,6 +41,8 @@ footer p {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.4em;
+  width: calc(100% - 1.5em);
 }
 
 main {
@@ -80,11 +82,13 @@ main > * {
   box-sizing: border-box;
 }
 
-.inputBlock.input-twitterUsername,
-.inputBlock.input-url,
-.inputBlock.input-title,
-.inputBlock.input-imagePath {
-  width: 50%;
+@media only screen and (min-width: 700px) {
+  .inputBlock.input-twitterUsername,
+  .inputBlock.input-url,
+  .inputBlock.input-title,
+  .inputBlock.input-imagePath {
+    width: 50%;
+  }
 }
 
 .downArrow {
